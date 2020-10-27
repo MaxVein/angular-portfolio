@@ -2,15 +2,31 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import {Routes, RouterModule} from '@angular/router';
+
 import { AppComponent } from './app.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { WebDesignProjectsComponent } from './web-design-projects/web-design-projects.component';
+import { GraphicDesignProjectsComponent } from './graphic-design-projects/graphic-design-projects.component';
+
+const appRoutes: Routes = [
+    { path: '', component:AppComponent},
+    { path: 'about', component: AboutMeComponent, pathMatch:'full'},
+    { path: 'webdesignprojects', component: WebDesignProjectsComponent, pathMatch:'full'},
+    { path: 'graphicdesignprojects', component: GraphicDesignProjectsComponent, pathMatch:'full' }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutMeComponent,
+    WebDesignProjectsComponent,
+    GraphicDesignProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
