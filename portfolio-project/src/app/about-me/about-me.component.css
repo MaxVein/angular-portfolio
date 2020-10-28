@@ -1,9 +1,45 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/../assets/img/bg-mastheadMy.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("/../assets/img/bg-mastheadMy.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+.github-info__title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.github-info__image-block{
+  position: relative;
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+.github-info__image-block img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.github-info__login {
+  font-size: 2rem;
+}
+.github-info__profileLink {
+  font-size: 1.1rem;
+}
+.github-info__content{
+  max-width: 100%;
 }
