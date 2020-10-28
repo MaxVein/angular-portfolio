@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { WebDesignProjectsComponent } from './web-design-projects/web-design-projects.component';
 import { GraphicDesignProjectsComponent } from './graphic-design-projects/graphic-design-projects.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-    { path: '', component:AppComponent},
+    { path: '', component: HomeComponent},
     { path: 'about', component: AboutMeComponent, pathMatch:'full'},
     { path: 'webdesignprojects', component: WebDesignProjectsComponent, pathMatch:'full'},
     { path: 'graphicdesignprojects', component: GraphicDesignProjectsComponent, pathMatch:'full' }
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     AboutMeComponent,
     WebDesignProjectsComponent,
-    GraphicDesignProjectsComponent
+    GraphicDesignProjectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
