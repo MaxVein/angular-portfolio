@@ -11,15 +11,14 @@ import { WebDesignProjectsComponent } from './web-design-projects/web-design-pro
 import { GraphicDesignProjectsComponent } from './graphic-design-projects/graphic-design-projects.component';
 import { HomeComponent } from './home/home.component';
 
-import { GithubInfoService } from "./about-me/github-info.service";
+import { GithubInfoService } from './about-me/github-info.service';
 import { from } from 'rxjs';
 
-
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent},
-    { path: 'about', component: AboutMeComponent },
-    { path: 'webdesignprojects', component: WebDesignProjectsComponent},
-    { path: 'graphicdesignprojects', component: GraphicDesignProjectsComponent}
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutMeComponent },
+  { path: 'webdesignprojects', component: WebDesignProjectsComponent },
+  { path: 'graphicdesignprojects', component: GraphicDesignProjectsComponent },
 ];
 
 @NgModule({
@@ -34,9 +33,9 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [GithubInfoService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

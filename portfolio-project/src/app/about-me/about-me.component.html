@@ -58,44 +58,48 @@
   </div>
 </header>
 <!-- Services-->
-<section class="page-section bg-primary" id="services">
+<section class="page-section bg-primary service-section" id="services">
   <div class="container">
-    <h2 class="text-center mt-0">At Your Service</h2>
-    <hr class="divider my-4" />
+    <h2 class="text-center mt-0 service-section__title">What job can I do?</h2>
+    <hr class="divider my-4 service-section__divider" />
+    <p class="col-lg-8 text-center service-section__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis
+      nisi eum reiciendis id laudantium at, ipsa numquam accusamus ipsam!
+    </p>
     <div class="row">
       <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
+        <div class="">
           <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-          <h3 class="h4 mb-2">Sturdy Themes</h3>
-          <p class="text-muted mb-0">
-            Our themes are updated regularly to keep them bug free!
+          <h3 class="h4 mb-2">Web Development</h3>
+          <p class="mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
+        <div class="">
           <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-          <h3 class="h4 mb-2">Up to Date</h3>
-          <p class="text-muted mb-0">
-            All dependencies are kept current to keep things fresh.
+          <h3 class="h4 mb-2">UI/UX Design</h3>
+          <p class="mb-0">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo?
           </p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
+        <div class="">
           <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-          <h3 class="h4 mb-2">Ready to Publish</h3>
-          <p class="text-muted mb-0">
-            You can use this design as is, or you can make changes!
+          <h3 class="h4 mb-2">Graphic Design</h3>
+          <p class="mb-0">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
-        <div class="mt-5">
+        <div class="">
           <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-          <h3 class="h4 mb-2">Made with Love</h3>
-          <p class="text-muted mb-0">
-            Is it really open source if it's not made with love?
+          <h3 class="h4 mb-2">SEO Analysis</h3>
+          <p class="mb-0">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut!
           </p>
         </div>
       </div>
@@ -103,41 +107,51 @@
   </div>
 </section>
 <!-- Contact-->
-<section class="page-section" id="contact">
+<section class="page-section githubinfo-section" id="contact">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <h2 class="mt-0">Let's Get In Touch!</h2>
         <hr class="divider my-4" />
-        <p class="text-muted mb-5">
-          Ready to start your next project with us? Give us a call or send us an
-          email and we will get back to you as soon as possible!
+        <p class="text-muted mb-3">
+          Ready to start your next project with me? Give me a call or send an
+          email and I will get back to you as soon as possible!
         </p>
       </div>
     </div>
-    <div class="row github-info flex-column" ng-model="info">
-      <h2 class="github-info__title">I am on the Github</h2>
+    <div class="row github-info flex-column">
+      <h3 class="github-info__title">I am on the Github</h3>
       <div class="github-info__content justify-content-sm-around row">
         <div class="github-info__image-block">
           <img class="github-info__image" src="{{ info.avatar_url }}" alt="" />
         </div>
         <div class="github-info__text-block flex-column">
           <h2 class="github-info__login">Name : {{ info.login }}</h2>
-          <span>Profile : <a href="{{ info.html_url }}" class="github-info__profileLink">MaxVein on GitHub</a></span> 
+          <span class="github-info__row">ID : {{ info.id }}</span>
+          <span class="github-info__row">Node_ID : {{ info.node_id }}</span>
+          <span class="github-info__row"
+            >Created at : {{ info.created_at }}</span
+          >
+          <span class="github-info__row"
+            >Public repos number : {{ info.public_repos }}</span
+          >
+          <span class="github-info__row"
+            >Profile link :
+            <a href="{{ info.html_url }}" class="github-info__profile-link"
+              >MaxVein on GitHub</a
+            ></span
+          >
+          <span class="github-info__row"
+            >My dial number :
+            <a href="tel:+380954112331">+(380)-95-411-23-31</a></span
+          >
+          <span class="github-info__row">
+            My work email :
+            <a href="mailto:loginauth@yopmail.com"
+              >loginauth@yopmail.com</a
+            ></span
+          >
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-        <div>+1 (555) 123-4567</div>
-      </div>
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-        <a class="d-block" href="mailto:contact@yourwebsite.com"
-          >contact@yourwebsite.com</a
-        >
       </div>
     </div>
   </div>

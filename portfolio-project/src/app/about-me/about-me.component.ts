@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
-import { GithubInfoService } from "./github-info.service"
-import { HttpClient } from '@angular/common/http';
-
+import { GithubInfoService } from './github-info.service';
+import { User } from './User';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css'],
-  providers:[GithubInfoService],
+  providers: [GithubInfoService],
 })
 export class AboutMeComponent implements OnInit {
-  info: GithubInfoService;
-  constructor(private infoservice: GithubInfoService) { }
+  info: User;
+  constructor(private infoservice: GithubInfoService) {}
   ngOnInit(): void {
-    this.infoservice.getData().subscribe((infoParsed:GithubInfoService)=> this.info = infoParsed)
+    this.infoservice
+      .getData()
+      .subscribe((infoParsed: User) => (this.info = infoParsed));
   }
 }

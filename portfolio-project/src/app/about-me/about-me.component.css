@@ -12,15 +12,35 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
-.github-info__title{
+.service-section{
+  padding: 4% 0;
+  color: white;
+}
+.service-section__title{
+  color: white;
+  margin-bottom: 2rem;
+}
+.service-section__divider{
+  border-color: white;
+}
+.service-section__text{
+  margin: 0 auto 2rem;
+}
+.githubinfo-section {
+  padding: 4% 0;
+}
+.github-info {
+  margin-bottom: 2rem;
+}
+.github-info__title {
   text-align: center;
   margin-bottom: 2rem;
 }
-.github-info__image-block{
+.github-info__image-block {
   position: relative;
   display: block;
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 3rem;
@@ -37,9 +57,17 @@ header.masthead {
 .github-info__login {
   font-size: 2rem;
 }
-.github-info__profileLink {
+.github-info__profile-link {
   font-size: 1.1rem;
 }
-.github-info__content{
+.github-info__content {
   max-width: 100%;
 }
+.github-info__row{
+  display: block;
+  margin-bottom: 1rem;
+}
+.github-info__row:last-child{
+  margin-bottom: 0rem;
+}
+
