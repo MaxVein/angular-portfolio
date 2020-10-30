@@ -14,13 +14,6 @@ import { HomeComponent } from './home/home.component';
 import { GithubInfoService } from './about-me/github-info.service';
 import { from } from 'rxjs';
 
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutMeComponent },
-  { path: 'webdesignprojects', component: WebDesignProjectsComponent },
-  { path: 'graphicdesignprojects', component: GraphicDesignProjectsComponent },
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,8 +25,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [GithubInfoService],
   bootstrap: [AppComponent],
